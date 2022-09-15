@@ -1,0 +1,38 @@
+<form method="post" id="add_user" class="d-flex justify-content-center my-5">
+    <div class="new_service my-3">
+        <div class="form-group">
+            <label for="name" class="text-dark">Name: </label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder=" write your name here.">
+        </div>
+        <div class="form-group py-2">
+            <label for="Email" class="text-dark">Email: </label>
+            <input type="Email" name="email" value="" placeholder="  example@gmail.com">
+        </div>
+        <div class="form-group py-2">
+            <label for="gender" class="text-dark">Gender: </label>
+            <div class="radio form-check form-check-inline">
+                <input type="radio" id="radio2" name="gender" value="male">
+                <label for="radio2" >Male</label>
+            </div>
+            <div class="radio form-check form-check-inline">
+                <input type="radio" id="radio3" name="gender" value="female">
+                <label for="radio3">Female</label>
+            </div>
+        </div>
+        <div class="form-group py-2">
+            <label for="gender" class="text-dark">Status: </label>
+            <div class="radio form-check form-check-inline">
+                <input type="radio" id="radio4" name="status" value="active">
+                <label for="radio4" >Active</label>
+            </div>
+            <div class="radio form-check form-check-inline">
+                <input type="radio" id="radio5" name="status" value="Inactive">
+                <label for="radio5">Inactive</label>
+            </div>
+        </div>
+        <div class="form-group py-2">
+            <button type="submit" class="btn btn-dark update">Save</button>
+        </div>            
+    </div>
+</form>

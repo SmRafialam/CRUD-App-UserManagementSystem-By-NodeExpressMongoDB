@@ -1,0 +1,39 @@
+<!-- header -->
+<%- include("include/header") %> 
+<!-- header -->
+
+<!-- main body -->
+<section class="main-body">
+    <div class="container">
+        <div class="box-nav d-flex justify-content-between py-3">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User <i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+        <!-- form-handeling -->
+        <form action="/" method="post">
+            <table class="table">
+                <thead class="thead-dark bg-dark text-white">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>@Email</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include("include/show") %> 
+                </tbody>
+            </table>
+        </form>
+    </div>
+</section>
+<!-- main body end-->
+
+
+<!-- footer -->
+<%- include("include/footer") %> 
+<!-- footer -->
+

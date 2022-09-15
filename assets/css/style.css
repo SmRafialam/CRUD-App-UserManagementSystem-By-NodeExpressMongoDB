@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header nav{
+    background-color: #06a6a0;
+    padding: 1em 0;
+    width: 100%;
+}
+.table tr:hover{
+    background-color: #06a6a0;
+}
+.update{
+    width: 100%;
+    background-color: #16db93;
+    font-family: 'PT Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+}

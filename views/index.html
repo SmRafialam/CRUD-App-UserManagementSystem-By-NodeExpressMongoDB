@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>CRUD Application</title>
+</head>
+<body>
+
+<!-- header -->
+<section class="header">
+    <nav>
+        <div class="container">
+            <div class="text-center">
+                <a href="/" class="nav-brand text-dark">User Management System</a>
+            </div>
+        </div>
+    </nav>
+</section>
+<!-- header end-->
+
+<!-- main body -->
+<section class="main-body">
+    <div class="container">
+        <div class="box-nav d-flex justify-content-between py-3">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New User <i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+        <!-- form-handeling -->
+        <form action="/" method="post">
+            <table class="table">
+                <thead class="thead-dark bg-dark text-white">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>@Email</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Username</td>
+                        <td>example@gmail.com</td>
+                        <td>Male</td>
+                        <td>Active</td>
+                        <td>
+                            <a href="#" class="btn border-shadow update">
+                                <span class="text-gradient text-info"><i class="fa-solid fa-pen-to-square"></i></span>
+                            </a>
+                            <a href="#" class="btn border-shadow delete">
+                                <span class="text-gradient text-danger"><i class="fa-solid fa-trash"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</section>
+<!-- main body end-->
+
+
+
+<!-- footer -->
+    <footer class="text-center">
+        <p>All right reserved by &copy; s. m. Rafi Alam</p>
+    </footer>
+<!-- footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+ </body>
+</html>
