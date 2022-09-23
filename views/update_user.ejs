@@ -15,11 +15,11 @@
             <span class="text-dark">Use the below form to Update a new account</span>
         </div>
         <!-- Update-userform-handeling -->
-        <form method="POST" id="update_user" class="d-flex justify-content-center my-5">
+        <form method="post" id="update_user" class="d-flex justify-content-center my-5">
             <div class="new_service my-3">
                 <div class="form-group">
                     <label for="name" class="text-dark">Name: </label>
-                    <input type="hidden" value="<%= user._id %>" name="id">
+                    <input type="hidden" name="id" value="<%= user._id %>">
                     <input type="text" name="name" value="<%= user.name %>" placeholder=" write your name here.">
                 </div>
                 <div class="form-group py-2">
@@ -29,22 +29,22 @@
                 <div class="form-group py-2">
                     <label for="gender" class="text-dark">Gender: </label>
                     <div class="radio form-check form-check-inline">
-                        <input type="radio" id="radio2" name="gender" value="<%= user.gender=='Male'?'checked':'' %>">
+                        <input type="radio" id="radio2" name="gender" value="Male"<%= user.gender=='Male'?'checked':'' %>>
                         <label for="radio2" >Male</label>
                     </div>
                     <div class="radio form-check form-check-inline">
-                        <input type="radio" id="radio3" name="gender" value="<%= user.gender=='Female'?'checked':'' %>">
+                        <input type="radio" id="radio3" name="gender" value="Female"<%= user.gender=='Female'?'checked':'' %>>
                         <label for="radio3">Female</label>
                     </div>
                 </div>
                 <div class="form-group py-2">
-                    <label for="gender" class="text-dark">Status: </label>
+                    <label for="status" class="text-dark">Status: </label>
                     <div class="radio form-check form-check-inline">
-                        <input type="radio" id="radio4" name="status" value="<%= user.status=='Active'?'checked':'' %>">
+                        <input type="radio" id="radio4" name="status" value="Active"<%= user.status=='Active'?'checked':'' %>>
                         <label for="radio4" >Active</label>
                     </div>
                     <div class="radio form-check form-check-inline">
-                        <input type="radio" id="radio5" name="status" value="<%= user.status=='Inactive'?'checked':'' %>">
+                        <input type="radio" id="radio5" name="status" value="Inactive"<%= user.status=='Inactive'?'checked':'' %>>
                         <label for="radio5">Inactive</label>
                     </div>
                 </div>

@@ -12,6 +12,15 @@ $("#update_user").submit(function(event){
       data[n['name']] = n['value']
     })
     console.log(data);
+
+    var request={
+      "url": `http://localhost:3333/api/users/${data.id}`,
+      "method": "PUT",
+      "data": data
+    }
+    $.ajax(request).done(function(response){
+      alert("Data updated Successfully!");
+    })
   });
 
 if(window.location.pathname == '/'){
